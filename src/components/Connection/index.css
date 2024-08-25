@@ -1,0 +1,83 @@
+/* src/styles/loader.css */
+/* General container styling */
+.onboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Loader styling */
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.loader div {
+    border: 8px solid #f3f3f3; /* Light grey background */
+    border-top: 8px solid #3498db; /* Blue background */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Up arrow styling */
+.up {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    /* Add your up arrow image or SVG here */
+}
+
+/* Confetti styling */
+.confetti {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    /* Add your confetti image or SVG here */
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Description styling */
+.desc {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Button styling */
+.onboard {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.onboard:hover {
+    background-color: #0056b3;
+}
+.onboard:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
